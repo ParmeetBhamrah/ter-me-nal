@@ -9,7 +9,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="">
       <Terminal
         commandHistory={commandHistory}
         addCommand={addCommand}

@@ -2,10 +2,10 @@ import React from 'react'
 
 const TerminalOutput = ({ commandHistory }) => {
   return (
-    <div>
+    <div className='mb-2'>
         {commandHistory.map((cmd, index) => (
             <div key={index}>
-                {cmd}
+                {`> ${cmd}`}
             </div>
         ))}
     </div>
