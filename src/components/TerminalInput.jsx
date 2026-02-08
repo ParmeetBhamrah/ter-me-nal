@@ -15,7 +15,7 @@ const TerminalInput = ({ addCommand }) => {
                 value={currentText}
                 onChange={e => setCurrentText(e.target.value)}
                 placeholder='Type a command...'
-                autofocus
+                autoFocus
             />
         </form>
     )
