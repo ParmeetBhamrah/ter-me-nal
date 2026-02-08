@@ -5,7 +5,7 @@ import TerminalOutput from './TerminalOutput'
 
 const Terminal = ({ commandHistory, addCommand }) => {
   return (
-    <div className='bg-black text-green-400 font-mono p-4 rounded-lg min-h-screen'>
+    <div className='bg-black text-green-400 font-mono p-4 min-h-screen'>
         <AsciiHeader/>
         <TerminalOutput commandHistory={commandHistory} />
         <TerminalInput addCommand={addCommand} />
