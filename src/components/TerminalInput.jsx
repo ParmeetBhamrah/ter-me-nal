@@ -11,13 +11,14 @@ const TerminalInput = ({ addCommand }) => {
     }
     return (
         <form onSubmit={handleSubmit}>
+            <span className="mr-2 text-green-400 font-mono">parmeet@portfolio:~$</span>
             <input 
                 type='text'
                 value={currentText}
                 onChange={e => setCurrentText(e.target.value)}
                 placeholder='Type a command...'
                 autoFocus
-                className='bg-black text-green-400 font-mono border-none outline-none w-full'
+                className='bg-black text-white font-mono border-none outline-none w-max'
             />
         </form>
     )

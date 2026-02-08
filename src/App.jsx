@@ -5,11 +5,30 @@ function App() {
   const [commandHistory, setCommandHistory] = useState([])
 
   const addCommand = (newCommand) => {
-    setCommandHistory([...commandHistory, newCommand])
+    let outputText = ""
+
+    switch (newCommand.toLowerCase()) {
+      case "help":
+        outputText = "Availabe commands:\n\n\thelp\n\tabout\n\tprojects\n\tskills\n\tcontact\n\tclear"
+        break
+      case "about":
+        outputText = "Hi, I am Parmeet, a Programmer..."
+        break
+      case "clear":
+        setCommandHistory([])
+        return
+      default:
+        outputText = `Command not found: ${newCommand}`
+    }
+
+    setCommandHistory([...commandHistory,
+      {type: "command", text: newCommand},
+      {type: "output", text: outputText}
+    ])
   }
 
   return (
-    <div className="">
+    <div>
       <Terminal
         commandHistory={commandHistory}
         addCommand={addCommand}
