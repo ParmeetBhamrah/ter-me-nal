@@ -1,8 +1,15 @@
 import React from 'react'
+import AsciiHeader from './AsciiHeader'
+import TerminalInput from './TerminalInput'
+import TerminalOutput from './TerminalOutput'
 
-const Terminal = () => {
+const Terminal = ({ commandHistory, addCommand }) => {
   return (
-    <div>Terminal</div>
+    <div>
+        <AsciiHeader/>
+        <TerminalOutput commandHistory={commandHistory} />
+        <TerminalInput addCommand={addCommand} />
+    </div>
   )
 }
 
