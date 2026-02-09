@@ -17,21 +17,22 @@ const TerminalOutput = ({ commandHistory }) => {
                         if (item.valid) {
                             if (line.type === "text") {
                                 return <div key={idx} className='text-gray-50'>
-                                    <pre>{line.value}</pre>
+                                    <pre className='whitespace-pre-wrap'>{line.value}</pre>
                                 </div>
                             }
                             if (line.type === "link") {
                                 return (
                                     <div>
-                                        <a
-                                            key={idx}
-                                            href={line.url}
-                                            target='_blank'
-                                            rel='noopener noreferrer'
-                                            className='text-blue-400 hover:text-gray-50 hover:underline'
-                                        >
-                                            <pre>{line.text}</pre>
-                                        </a>
+                                        <pre className='whitespace-pre-wrap'>
+                                            <a
+                                                key={idx}
+                                                href={line.url}
+                                                target='_blank'
+                                                rel='noopener noreferrer'
+                                                className='text-blue-400 hover:text-gray-50 hover:underline'
+                                            >{line.text}
+                                            </a>
+                                        </pre>
                                     </div>
                                 )
                             }
@@ -41,18 +42,6 @@ const TerminalOutput = ({ commandHistory }) => {
                             )
                         }
                     })}
-
-                {/* {item.type === "output" && (
-                    item.lines.map((line, idx) => (
-                        <div 
-                            key={idx}
-                        >
-                            {item.valid ? 
-                            <span className='text-gray-50'><pre>{line}</pre></span> 
-                            : <span className='text-red-400'>{line}</span>}
-                        </div>
-                    ))
-                )} */}
             </div>
         ))}
     </div>
