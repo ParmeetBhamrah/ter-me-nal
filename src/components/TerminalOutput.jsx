@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TerminalOutput = ({ commandHistory }) => {
-  // add auto scroll
     return (
     <div className='mb-2'>
         {commandHistory.map((item, index) => (
