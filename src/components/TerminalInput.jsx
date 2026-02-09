@@ -6,7 +6,7 @@ const TerminalInput = ({ addCommand }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!currentText) return
-        addCommand(currentText.trim())
+        addCommand(currentText)
         setCurrentText("")
     }
     return (
