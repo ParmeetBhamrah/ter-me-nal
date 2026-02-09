@@ -12,7 +12,7 @@ const AsciiHeader = () => {
 |_|   \___/|_|   \__|_|  \___/|_|_|\___/       
 `;
     return (
-    <pre className='text-green-400 font-mono text-sm mb-2'>
+    <pre className='text-green-400 font-mono font-extrabold text-sm mb-2'>
         {ascii}
     </pre>
     )
