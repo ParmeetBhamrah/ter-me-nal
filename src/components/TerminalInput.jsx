@@ -11,7 +11,7 @@ const TerminalInput = ({ addCommand }) => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <span className="mr-2 text-green-400 font-mono">parmeet@portfolio:~$</span>
+            <span className="mr-2 text-green-400 font-mono font-extrabold">parmeet@portfolio:~$</span>
             <input 
                 type='text'
                 value={currentText}

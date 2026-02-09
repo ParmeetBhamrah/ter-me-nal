@@ -9,7 +9,7 @@ function App() {
 
     switch (newCommand.toLowerCase()) {
       case "help":
-        outputText = "Availabe commands:\n\n\thelp\n\tabout\n\tprojects\n\tskills\n\tcontact\n\tclear"
+        outputText = "Availabe commands:\n\thelp\n\tabout\n\tprojects\n\tskills\n\tcontact\n\tclear"
         break
       case "about":
         outputText = "Hi, I am Parmeet, a Programmer..."
