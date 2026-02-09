@@ -6,7 +6,7 @@ A terminal-style portfolio website built with **React** and **Tailwind CSS**, wh
 
 - Terminal-like UI and prompt
 - Command-based navigation
-- Persistent command history
+- Persistent command history throughout session
 - ↑ / ↓ arrow key navigation
 - Auto-focused input (type anytime)
 - Graceful handling of invalid commands
