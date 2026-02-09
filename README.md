@@ -1,16 +1,40 @@
-# React + Vite
+# ter-me-nal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A terminal-style portfolio website built with **React** and **Tailwind CSS**, where users explore my profile by typing commands like a real CLI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Terminal-like UI and prompt
+- Command-based navigation
+- Persistent command history
+- ↑ / ↓ arrow key navigation
+- Auto-focused input (type anytime)
+- Graceful handling of invalid commands
+- Clickable links in terminal output
+- Fully responsive design
 
-## React Compiler
+## Available Commands
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `help` – List all commands  
+- `about` – About me  
+- `projects` – My projects  
+- `skills` – Tech stack  
+- `contact` – Contact details  
+- `clear` – Clear the terminal  
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React (Functional Components)
+- Vite
+- Tailwind CSS v4
+
+## Concepts Learned & Applied
+
+- Component-based architecture
+- State & re-rendering
+- Controlled inputs
+- Keyboard event handling
+- `useState`, `useEffect`, `useRef`
+- Separation of logic and UI
+- Utility-first styling with Tailwind
