@@ -7,8 +7,9 @@ const Terminal = ({ commandHistory, addCommand }) => {
   const bottomOdPannelRef = useRef(null) // for auto-scroll
 
   useEffect(() => {
+    if (commandHistory.length === 0) return
     if (bottomOdPannelRef) {
-      bottomOdPannelRef.current.scrollIntoView() // auto-scroll
+      bottomOdPannelRef.current.scrollIntoView({behavior: "smooth"}) // auto-scroll
     }
   }, [commandHistory])
   
