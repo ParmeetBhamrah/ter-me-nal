@@ -13,7 +13,7 @@ const Terminal = ({ commandHistory, addCommand }) => {
   }, [commandHistory])
   
   return (
-    <div className='bg-black text-green-400 font-mono p-4 h-screen overflow-y-auto'>
+    <div className='bg-[#300A24] text-green-400 font-mono p-4 h-screen overflow-y-auto'>
         <AsciiHeader/>
         <div className='text-blue-400 mb-2'>
           Type <span className='text-green-400'>help</span> to see availabe commands.
