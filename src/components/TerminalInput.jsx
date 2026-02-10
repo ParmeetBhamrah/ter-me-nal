@@ -61,7 +61,7 @@ const TerminalInput = ({ addCommand }) => {
                         }
                     }
                 }}
-                placeholder='Type a command...'
+                // placeholder='Type a command...'
                 autoFocus
                 className='text-white font-mono border-none outline-none w-max'
             />
